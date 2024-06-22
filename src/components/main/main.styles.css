@@ -1,0 +1,21 @@
+.stories-container {
+  width: 100%;
+  position: relative;
+  top: 90px;
+  display: flex;
+  justify-content: center; /* Centered the container */
+  flex-wrap: wrap; /* For better wrapping of the story cards */
+}
+
+.stories-container button {
+  margin-bottom: 12rem;
+}
+
+@media only screen and (max-width: 768px),
+only screen and (max-device-width: 768px){
+
+  .stories-container{
+    display: flex;
+    flex-direction: column; /* More future proof than flex-flow: column nowrap; */
+  }
+}
